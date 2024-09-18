@@ -1,0 +1,130 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap"); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  /* font-size: 1.5rem; */
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  background-color: #C2CAE8;
+}
+
+h1, p{
+  display: flex;
+  justify-content: center;
+}
+p{
+  margin-top: 1rem;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+
+input:focus, button:focus{
+  outline: none;
+}
+
+
+.form{
+  border:1px solid #333;
+  border-radius: 4px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+input{
+  border: none; /* Set the same border color */
+  border-radius: 4px; /* Apply rounded corners */
+  padding: 8px; /* Add padding to both elements */
+  background-color: #C2CAE8;
+}
+
+.submit-button {
+  border: none;
+  border-left: 1px solid black; /*Set the same border color */
+  border-radius:  0 4px 4px 0; /* Apply rounded corners */
+  padding: 8px; /* Add padding to both elements */
+  background-color: white;
+  cursor: pointer;
+  background-color: #C2CAE8;
+}
+
+.submit-button:hover {
+  background: #585858 ;
+  color: #C2CAE8;
+}
+
+.task-button{
+  display: block;
+  border: none;
+  border-radius: 0 3px 3px 0;
+  padding: 5px;
+  font-size: 0.75rem;
+  background-color: #C2CAE8;
+  cursor: pointer;
+  
+}
+
+ul{
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  padding-left: 5px;
+  margin-left: 10px;
+  margin-top: 10px;
+  width: auto; /* Change the width to auto or remove this line */
+  min-height: 25px;
+  list-style: none;
+  border: 1px solid #111D4A; /* Initially transparent */
+  cursor: pointer;
+}
+
+.task-button:hover{
+  background-color: #C2CAE8;
+  color: white;
+  text-decoration: none;
+}
+
+li:hover {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Adjust these values as needed */
+}
+
+.li-tag.crossed span{
+  text-decoration:line-through;
+}
+
+
+.li-tag.not-crossed span{
+  text-decoration: none;
+}
+
+/* Apply background color to crossed text content */
+.li-tag.crossed span {
+  background-color: hsla(243, 27%, 61%, 0.6); /* Adjust the background color and opacity as needed  */
+}
+
+/* Remove background color from not-crossed text content  */
+.li-tag.not-crossed span {
+  background-color: transparent;
+} 
+span{
+  width: auto;
+  display: flex;
+  flex-grow: 1;
+}
